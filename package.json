@@ -98,6 +98,8 @@
   },
   "dependencies": {
     "@ngxs/store": "3.7.0",
-    "midi": "1.0.0"
+    "@types/naudiodon": "2.1.0",
+    "midi": "1.0.0",
+    "naudiodon": "2.2.4"
   }
 }

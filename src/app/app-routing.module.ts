@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { ControllerComponent } from './components/controller/controller.component';
 
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: AppComponent
+    component: ControllerComponent
   },
 ];
 

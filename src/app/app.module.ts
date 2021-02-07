@@ -14,6 +14,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
+import { ControllerComponent } from './components/controller/controller.component';
+import {AudioStreamService} from './services/audio-stream.service'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -21,7 +23,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ControllerComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -36,7 +38,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       }
     })
   ],
-  providers: [],
+  providers: [AudioStreamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
